@@ -1,6 +1,5 @@
 import { Tabs } from "expo-router";
 import { ImageBackground, Image, Text, View } from "react-native";
-
 import { icons } from "@/constants/icons";
 import { images } from "@/constants/images";
 
@@ -53,10 +52,10 @@ export default function TabsLayout() {
       <Tabs.Screen
         name="index"
         options={{
-          title: "index",
+          title: "SignIn",
           headerShown: false,
           tabBarIcon: ({ focused } : { focused : boolean }) => (
-            <TabIcon focused={focused} icon={icons.home} title="Home" />
+            <TabIcon focused={focused} icon={icons.home} title="SignIn" />
           ),
         }}
       />
@@ -64,32 +63,10 @@ export default function TabsLayout() {
       <Tabs.Screen
         name="search"
         options={{
-          title: "Search",
+          title: "SignUp",
           headerShown: false,
           tabBarIcon: ({ focused } : { focused : boolean }) => (
-            <TabIcon focused={focused} icon={icons.search} title="Search" />
-          ),
-        }}
-      />
-
-      <Tabs.Screen
-        name="save"
-        options={{
-          title: "Save",
-          headerShown: false,
-          tabBarIcon: ({ focused } : { focused : boolean }) => (
-            <TabIcon focused={focused} icon={icons.save} title="Save" />
-          ),
-        }}
-      />
-
-      <Tabs.Screen
-        name="profile"
-        options={{
-          title: "Profile",
-          headerShown: false,
-          tabBarIcon: ({ focused } : { focused : boolean }) => (
-            <TabIcon focused={focused} icon={icons.person} title="Profile" />
+            <TabIcon focused={focused} icon={icons.search} title="SignUp" />
           ),
         }}
       />
